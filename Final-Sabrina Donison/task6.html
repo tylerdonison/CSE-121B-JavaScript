@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSE 121b: Week 07 | Sabrina's final</title>
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <nav>
+        <ul id="menu">
+            <li><a id="toggleMenu">&equiv;</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Lesson 2</a></li>
+            <li><a href="#">Lesson 3</a></li>
+            <li><a href="#">Lesson 4</a></li>
+            <li><a href="#">Lesson 5</a></li>
+            <li><a href="#" class="active">Lesson 6</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Pick Your Own Project:</h1>
+        <h2>Yahtzee Scoresheet</h2>
+    </header>
+    <main>
+        <section id=Sections>
+            <article>
+                <h3>Left Section</h3>
+                <div><label for="one">Ones (Sum of Ones):</label></div>
+                <div><label for="two">Twos (Sum of Twos):</label></div>
+                <div><label for="three">Threes (Sum of Threes):</label></div>
+                <div><label for="four">Fours (Sum of Fours):</label></div>
+                <div><label for="five">Fives (Sum of Fives):</label></div>
+                <div><label for="six">Sixes (Sum of Sixes):</label></div>
+                <div>Bonus for Left Section:</div>
+                <div>____________________</div>
+                <div>Total Score for Left Section: </div>
+            </article>
+
+            <article>
+                <h3>Insert Score</h3>
+                <div>
+                    <input type="text" id="one" name="one">
+                    <button id="oneSubmit">Submit</button>
+                    Score: <span id="oneScore"></span>
+                </div>
+                <div>
+                    <input type="text" id="two" name="two">
+                    <button id="twoSubmit">Submit</button>
+                    Score: <span id="twoScore"></span>
+                </div>
+                <div>
+                    <input type="text" id="three" name="three">
+                    <button id="threeSubmit">Submit</button>
+                    Score: <span id="threeScore"></span>
+                </div>
+                <div>
+                    <input type="text" id="four" name="four">
+                    <button id="fourSubmit">Submit</button>
+                    Score: <span id="fourScore"></span>
+                </div>
+                <div>
+                    <input type="text" id="five" name="five">
+                    <button id=fiveSubmit>Submit</button>
+                    Score: <span id="fiveScore"></span>
+                </div>
+                <div>
+                    <input type="text" id="six" name="six">
+                    <button id="sixSubmit">Submit</button>
+                    Score: <span id="sixScore"></span>
+                </div>
+                <div>(+35 if total is 63+)__ <span id="leftBonusScore"></span></div>
+                <div>_________________ __</div>
+                <div>_________________ <span id ="leftTotalScore"></span></div>
+            </article>
+
+            <article>
+                <h3>Right Section</h3>
+                <div><label for="threeOfAKind">Three of a Kind (Sum of All Dice):</label></div>
+                <div><label for="fourOfAKind">Four of a Kind (Sum of All Dice):</label></div>
+                <div><label for="fullHouse">Full House (25):</label></div>
+                <div><label for="smallStraight">Small Straight (of four, 30):</label></div>
+                <div><label for="largeStraight">Large Straight (of five, 40):</label></div>
+                <div><label for="yahtzee">Yahtzee (50):</label></div>
+                <div><label for="chance">Chance (Sum of All Dice):</label></div>
+                <div><label for="yahtzeeBonus">Yahtzee Bonus (100x Additional Yahtzee):</label></div>
+                <div>Total Score for Right Section:</div>               
+            </article>
+
+
+            <article>
+                <h3>Insert Score</h3>
+                <div>
+                    <input type="text" id="threeOfAKind" name="threeOfAKind">
+                    <button id="threeOfAKindSubmit">Submit</button>
+                    Score: <span id="threeOfAKindScore"></span>
+                </div>
+                <div>
+                    <input type="text" id="fourOfAKind" name="fourOfAKind">
+                    <button id="fourOfAKindSubmit">Submit</button>
+                    Score: <span id="fourOfAKindScore"></span>
+                </div>
+                <div>
+                    <input type="text" id="fullHouse" name="fullHouse">
+                    <button id="fullHouseSubmit">Submit</button>
+                    Score: <span id="fullHouseScore"></span>
+                </div>
+                <div>
+                    <input type="text" id="smallStraight" name="smallStraight">
+                    <button id="smallStraightSubmit">Submit</button>
+                    Score: <span id="smallStraightScore"></span>
+                </div>
+                <div>
+                    <input type="text" id="largeStraight" name="largeStraight">
+                    <button id="largeStraightSubmit">Submit</button>
+                    Score: <span id="largeStraightScore"></span>
+                </div>
+                <div>
+                    <input type="text" id="yahtzee" name="yahtzee">
+                    <button id="yahtzeeSubmit">Submit</button>
+                    Score: <span id="yahtzeeScore"></span>
+                </div>
+                <div>
+                    <input type="text" id="chance" name="chance">
+                    <button id="chanceSubmit">Submit</button>
+                    Score: <span id="chanceScore"></span>
+                </div>
+                <div>
+                    <input type="text" id="yahtzeeBonus" name="yahtzeeBonus">
+                    <button id="yahtzeeBonusSubmit">Submit</button>
+                    Score: <span id="yahtzeeBonusScore"></span>
+                </div>
+                <div>_________________ <span id ="rightTotalScore"></span>10</div>
+            </article>
+        </section>
+        
+    </main>
+    <header><h3>Grand Total: <span id="grandTotalScore"></h3></span>
+        <button id="reset">Reset</button>
+    </header>
+    <footer>
+        &copy;<span id="year"></span> | Pick Your Own Project | Lesson 6
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/task6.js"></script>
+</body>
+
+</html>
